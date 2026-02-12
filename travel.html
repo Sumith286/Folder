@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <style>
+        body{
+    margin-top: 75px;
+    margin-right: 0;
+    font-family: cursive ;
+}
+p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(20, 19, 19);
+    height: 74px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 3px solid black;
+}
+.header-name{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-left: 150px;
+    flex-grow: 2;
+}
+header nav{
+    flex-grow: 1;
+    color: white;
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.main-img-container{
+    position: relative;
+}
+.main-img{
+    width: 100%;
+    height: 800px; 
+}
+.main-text-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: rgba(255, 255, 255, 0.868);
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.581);
+}
+
+.main-text-container{
+    animation: zoomGlow 1.2s ease-out forwards;
+}
+
+.main-img-text{
+    font-size: 60px;
+}
+.main-img-text2{
+    font-size: 24px;
+    margin-left: 60px;
+}
+.main-button{
+    margin-top: 20px;
+    margin-left: 250px;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    background-color: rgb(0, 162, 255);
+    border: none;
+    border-radius: 8px;
+}
+.main-button:hover{
+    background-color: rgb(16, 15, 15);
+    cursor: pointer;
+}
+
+@keyframes zoomGlow {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+    box-shadow: 0 0 0px rgba(0, 140, 255, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(30, 38, 45, 0.7);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0px rgba(0, 140, 255, 0);
+  }
+}
+.main-box2-container{
+    margin-top: -2px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    background-color: rgba(201, 220, 249, 0.408);
+}
+.box2-head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(17, 17, 18);
+    margin-bottom: 25px;
+}
+.box2-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.des1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(165, 165, 165, 0.714);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.454);
+    transition: 0.3s;
+    background-color: white;
+}
+.des1:hover{
+    transform: translateY(-10px);
+}
+.des1-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+.des1-text1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 14px;
+}
+.des1-text2{
+    font-size: 20px;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.main-box3-container{
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(201, 220, 249, 0.408);
+    
+}
+.travel-head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.travel-sub-main-box{
+    padding: 15px;
+    margin-top: 18px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ;
+}
+.travel-sub-box1{
+    border: 1px solid skyblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+   transition: 0.3s;  
+}
+.travel-sub-box1:hover{
+    border:3px solid  rgb(103, 194, 221);
+    transform: scale(1.05);
+}
+.plan-name{
+    font-size: 28px;
+    font-weight: bold;
+}
+.plan-price{
+    margin-top: 14px;
+    margin-bottom: 10px;
+    color: rgb(35, 179, 211);
+    font-size: 35px;
+}
+.plan-days{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.plan-menu{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.book-now{
+    margin-top: 12px;
+    background-color: rgb(0, 149, 255);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border:none;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.book-now:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+.main-box4-container{
+    font-family: cursive;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(41, 47, 47) ;
+    color: aliceblue;
+    padding: 40px ;
+}
+html {
+    scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <header>
+            <div class="header-name">
+                Knight Travels
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="#contact">Contact</a>
+            </nav>
+    </header>
+
+    <section id="home">
+        <div class="main-img-container">
+            <img src="img.jpg" class="main-img">
+            <div class="main-text-container">
+                <p class="main-img-text">Explore the World with us</p>
+                <p class="main-img-text2">Start your memorable journey now. </p>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="destinations">
+        <div class="main-box2-container">
+            <div class="box2-head">Destinations</div>
+            <div class="box2-section">
+                <div class="des1">
+                    <img src="img.goa.jpg"class="des1-img">
+                    <div class="des1-text1">Goa</div>
+                    <div class="des1-text2">Popularly known as India’s party capital </div>
+                </div>
+                <div class="des1">
+                    <img src="img.munnar.jpg"class="des1-img">
+                    <div class="des1-text1">Munnar</div>
+                    <div class="des1-text2">Flaunting one of the best cliff beaches in Kerala</div>
+                </div>
+                <div class="des1">
+                    <img src="img.varkala.jpg"class="des1-img">
+                    <div class="des1-text1">Varkala</div>
+                    <div class="des1-text2">It is a most Beautiful tourist spot in Kerala</div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages">
+        <div class="main-box3-container">
+            <div class="travel-head">Packages</div>
+            <div class="travel-sub-main-box">
+                <div class="travel-sub-box1">
+                    <div class="plan-name">Basic</div>
+                    <div class="plan-price">&#8377 3599</div>
+                    <div class="plan-days">3 Days Stay</div>
+                    <div class="plan-menu">free Breakfast</div>
+                    <button class="book-now">Book Now</button>
+                </div>
+                <div class="travel-sub-box1">
+                    <div class="plan-name">Premium</div>
+                    <div class="plan-price">&#8377 5999</div>
+                    <div class="plan-days">5 Days Stay</div>
+                    <div class="plan-menu"> Included Special</div>
+                    <div class="plan-menu">Activities</div>
+                    <button class="book-now">Book Now</button>
+                </div>
+                <div class="travel-sub-box1">
+                    <div class="plan-name">Luxury</div>
+                    <div class="plan-price">&#8377 8999</div>
+                    <div class="plan-days">7 Days Stay</div>
+                    <div class="plan-menu">All Inclusive</div>
+                    <div class="plan-menu">Private Guide</div>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="main-box4-container">
+            <div class="travel-head">Contact Us</div>
+            <p>Address : 63/3,Sathyamgalam,Erode</p>
+            <p>Contect : +91 9042722449</p>
+            <p>Gmail : knighttravels@gmail.com</p>
+            <p>Since 2002</p>
+        </div>
+    </footer>
+
+</body>
+</html>
