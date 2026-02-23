@@ -14,7 +14,7 @@
         }
 
         .card {
-            width: 350px;
+            /* width: 350px;
             height: 200px;
             background: linear-gradient(135deg, #870f0f, #b22222);
             color: white;
@@ -22,20 +22,30 @@
             padding: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.7);
             position: relative;
-            transition: 1s;
+            transition: 1s; */
+            width: 60vw;     /* 50% of screen width */
+            height: 30vh;    /* 50% of screen height */
+            min-width: 300px;   /* Minimum size */
+            min-height: 200px;
+            background: linear-gradient(135deg, #870f0f, #b22222);
+            color: white;
+            border-radius: 20px;
+            padding: 6vw;   /* padding also responsive */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+            position: relative;
 
         }
 
         .card h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 4.5vh;
             letter-spacing: 1px;
         }
 
         .card h3 {
             margin: 5px 0 15px 0;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 3.5vh;
         }
 
         .line {
